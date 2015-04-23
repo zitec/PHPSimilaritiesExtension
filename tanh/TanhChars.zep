@@ -7,10 +7,6 @@ class TanhChars extends Similarity {
     
     protected tanhArrays;
     
-    /**
-     * @param string $data1
-     * @param string $data2
-     */
     public function __construct(string data1, string data2) {
         var textOperations, charCount;
         let textOperations = new TextOperations(data1, data2);

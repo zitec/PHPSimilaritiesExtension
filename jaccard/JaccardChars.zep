@@ -6,11 +6,7 @@ use Similarities\Utils\TextOperations;
 class JaccardChars extends Similarity {
     
     protected jaccardArrays;
-    
-    /**
-     * @param string $data1
-     * @param string $data2
-     */
+
     public function __construct(string data1, string data2) {
         let this->jaccardArrays = new JaccardArrays(str_split(data1), str_split(data2));
     }

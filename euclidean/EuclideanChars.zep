@@ -7,10 +7,6 @@ class EuclideanChars extends Similarity {
     
     protected euclideanArrays;
     
-    /**
-     * @param string $data1
-     * @param string $data2
-     */
     public function __construct(string data1, string data2) {
         var textOperations, charFrequency;
         let textOperations = new TextOperations(data1, data2);

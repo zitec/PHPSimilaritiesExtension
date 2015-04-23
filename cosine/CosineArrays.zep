@@ -3,7 +3,6 @@ use Similarities\Similarity;
 
 class CosineArrays extends Similarity {
 
-    // de facut verificare egalitate array-uri input
     public function __construct(array data1, array data2) {
         let this->data1 = data1;
         let this->data2 = data2;

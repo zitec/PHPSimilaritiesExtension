@@ -56,7 +56,7 @@ class TextOperations {
         let allChars = array_keys(this->charCount1 + this->charCount2);
         array charFreq1 = [];
         array charFreq2 = [];
-        //se genereaza array de output de dimensiuni egale
+        //generate equal arrays
         for oneChar in allChars {
             array_push(charFreq1, isset(this->charCount1[oneChar]) ? this->charCount1[oneChar] / length1 : 0);
             array_push(charFreq2, isset(this->charCount2[oneChar]) ? this->charCount2[oneChar] / length2 : 0);
@@ -93,7 +93,7 @@ class TextOperations {
         array wordFreq1 = [];
         array wordFreq2 = [];
 
-        //se genereaza array de output de dimensiuni egale
+        //generate equal arrays
         for oneWord in allWords {
             array_push(wordFreq1, isset(this->wordCount1[oneWord]) ? this->wordCount1[oneWord] / length1 : 0);
             array_push(wordFreq2, isset(this->wordCount2[oneWord]) ? this->wordCount2[oneWord] / length2 : 0);

@@ -6,11 +6,7 @@ use Similarities\Utils\TextOperations;
 class TanhWords extends Similarity {
     
     protected tanhArrays;
-    
-    /**
-     * @param string $data1
-     * @param string $data2
-     */
+
     public function __construct(string data1, string data2, separator = " ") {
         var textOperations, wordCount;
         let textOperations = new TextOperations(data1, data2);
