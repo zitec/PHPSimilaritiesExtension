@@ -18,4 +18,4 @@ TODO: Write usage instructions
 
 ## License
 
-You can find a copy of the license in [LICENSE.txt]
+You can find a copy of the license in [LICENSE.txt](LICENSE.txt)
