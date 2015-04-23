@@ -4,6 +4,9 @@ use Similarities\Similarity;
 class CosineArrays extends Similarity {
 
     public function __construct(array data1, array data2) {
+        if(count(data1) != count(data2)) {
+            throw new \InvalidArgumentException("The input arrays must have the same size");
+        }
         let this->data1 = data1;
         let this->data2 = data2;
     }
@@ -11,10 +14,8 @@ class CosineArrays extends Similarity {
     protected function dotProduct() -> double {
         double dotProduct = 0.0;
         var i;
-        if(count(this->data1) == count(this->data2)) {
-            for i in range(0, (count(this->data1) - 1)) {
-                let dotProduct += this->data1[i] * this->data2[i];
-            }
+        for i in range(0, (count(this->data1) - 1)) {
+            let dotProduct += this->data1[i] * this->data2[i];
         }
         return dotProduct;
     }

@@ -7,6 +7,9 @@ class MaxCommonTanhDecorator extends Similarity {
     protected tanhArrays;
 
     public function __construct(tanhArrays) {
+        if(!(tanhArrays instanceof TanhArrays)) {
+            throw new \InvalidArgumentException("Argument tanhArrays must be of type TanhArrays");
+        }
         let this->tanhArrays = tanhArrays;
     }
 

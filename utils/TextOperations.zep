@@ -39,10 +39,6 @@ class TextOperations {
         let this->wordSeparator = separator;
     }
 
-    public function getWordSeparator() -> string {
-        return this->wordSeparator;
-    }
-
     public function getCharFrequencies() -> array {
         this->setCharCount();
         array res = [];
@@ -100,16 +96,6 @@ class TextOperations {
         }
         let res = [wordFreq1, wordFreq2];
         return res;
-    }
-    
-    public function getCommonWordsCount() -> int {
-        this->setWordCount();
-        return count(array_intersect_key(this->wordCount1, this->wordCount2));
-    }
-    
-    public function getMaxCommonWordsCount() -> int {
-        this->setWordCount();
-        return min(count(this->wordCount1), count(this->wordCount2));
     }
 
 }
