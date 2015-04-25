@@ -1,4 +1,5 @@
 # PHPSimilaritiesExtension
+
 A PHP extension written in Zephir that contains a few similarities algorithms such as Cosine, Jaccard and Euclidean. The algorithms work with double arrays or strings as data input. 
 
 ## Setting up the Zephir project
@@ -18,4 +19,4 @@ Please see the examples repository: https://github.com/ZitecCOM/PHPSimilaritiesE
 
 ## License
 
-You can find a copy of the license in [LICENSE.txt](LICENSE.txt)
+This software runs under New BSD License. You can find a copy of the license in [LICENSE.txt](LICENSE.txt)
