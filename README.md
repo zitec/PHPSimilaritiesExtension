@@ -14,7 +14,7 @@ In order to install it on a different machine, just copy the generated extension
 
 ## Usage
 
-TODO: Write usage instructions
+Please see the examples repository: https://github.com/ZitecCOM/PHPSimilaritiesExamples
 
 ## License
 
